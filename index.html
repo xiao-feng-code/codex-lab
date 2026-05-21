@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小锋｜个人主页</title>
+  <meta
+    name="description"
+    content="一个正在用 Codex 学习做项目的个人主页：从 0 基础开始，把想法变成能运行的东西。"
+  />
+  <script src="./theme.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">C</span>
+      <span>
+        <strong>小锋</strong>
+        <small>从 0 到 1 的个人项目起点</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#learn">怎么学</a>
+      <a href="#roadmap">路线</a>
+      <a href="#projects">项目</a>
+      <a href="./codex-prompts.html">工具</a>
+      <a href="#prompts">提示词</a>
+      <a href="#contact">联系</a>
+      <button class="theme-toggle" type="button" data-theme-toggle>深色模式</button>
+    </nav>
+  </header>
+
+  <main id="home" class="shell">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">0 基础也能开始</p>
+        <h1>小锋的 Codex 起步主页。</h1>
+        <p class="hero-text">
+          这个页面会持续记录项目起步过程：先做个人网站，再做小工具，最后过渡到 AI 小应用。
+          每一步都尽量拆小，让它简单、可见、可复用。
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button--primary" href="./codex-prompts.html">打开提问工具</a>
+          <a class="button button--ghost" href="#roadmap">看学习路线</a>
+        </div>
+
+        <div class="hero-stats">
+          <article>
+            <strong>1</strong>
+            <span>个起步网站</span>
+          </article>
+          <article>
+            <strong>1</strong>
+            <span>个实用小工具</span>
+          </article>
+          <article>
+            <strong>4</strong>
+            <span>种提问场景</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <p class="panel-label">今天就能做的事</p>
+        <ul class="checklist">
+          <li>直接双击打开 `index.html` 看效果</li>
+          <li>改标题、改颜色、改卡片内容</li>
+          <li>学会向 Codex 提一个清楚的需求</li>
+        </ul>
+
+        <div class="panel-note">
+          <span>目标</span>
+          <p>先学会把“我想做一个东西”变成“我知道下一步该做什么”。</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="learn" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">边做边学</p>
+        <h2>你现在应该怎么学 Codex</h2>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="card">
+          <span class="card-kicker">01</span>
+          <h3>先说目标</h3>
+          <p>不要一上来就说技术名词，先讲你想解决什么问题。</p>
+        </article>
+        <article class="card">
+          <span class="card-kicker">02</span>
+          <h3>一次一小步</h3>
+          <p>每次只做一个功能，容易看懂，也方便你发现哪里出问题。</p>
+        </article>
+        <article class="card">
+          <span class="card-kicker">03</span>
+          <h3>让 Codex 解释</h3>
+          <p>改完以后要求它用新手能懂的话解释改了什么、为什么这么改。</p>
+        </article>
+        <article class="card">
+          <span class="card-kicker">04</span>
+          <h3>带着报错来</h3>
+          <p>出错时把报错、截图、现象一起给它，效率会高很多。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">未来路线</p>
+        <h2>先网站，再小工具，最后 AI 应用</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-card">
+          <p class="timeline-step">阶段 1</p>
+          <h3>个人网站 / 作品集</h3>
+          <p>练习页面结构、样式、响应式和一点点交互，先把成就感做出来。</p>
+        </article>
+        <article class="timeline-card">
+          <p class="timeline-step">阶段 2</p>
+          <h3>个人效率工具</h3>
+          <p>待办、番茄钟、记账页、灵感收集页，做真正能每天用的小功能。</p>
+        </article>
+        <article class="timeline-card">
+          <p class="timeline-step">阶段 3</p>
+          <h3>AI 小应用</h3>
+          <p>先接一个模型能力，做输入到输出的最小闭环，再慢慢升级。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">项目展示区</p>
+        <h2>以后你每完成一个想法，就往这里加一张卡</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="project-card">
+          <p class="project-tag">现在这个页面</p>
+          <h3>Codex 实验室 v1</h3>
+          <p>练习基础结构、视觉设计、文档说明和提示词沉淀。</p>
+        </article>
+        <a class="project-card project-card--link" href="./codex-prompts.html">
+          <p class="project-tag">现在可用</p>
+          <h3>Codex 提问模板工具</h3>
+          <p>按场景生成更清楚的提问内容，还能直接复制并记住你上次填写的输入。</p>
+          <span class="project-card__cta">打开工具</span>
+        </a>
+        <article class="project-card">
+          <p class="project-tag">未来升级</p>
+          <h3>AI 文案助手</h3>
+          <p>输入一句话，生成总结、文案或建议，学习 API 和服务层组织。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="prompts" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">可复用模板</p>
+        <h2>把下面这些话，直接发给 Codex</h2>
+      </div>
+
+      <div class="prompt-list">
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>加功能</h3>
+            <button class="ghost-btn" data-copy="#prompt-feature">复制</button>
+          </div>
+          <pre id="prompt-feature">请在当前项目里新增一个功能：{功能名}。
+目标是：{你想解决的问题}。
+请先查看项目结构，给出简短计划，再开始修改。
+改完后请告诉我每个文件做了什么。</pre>
+        </article>
+
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>改样式</h3>
+            <button class="ghost-btn" data-copy="#prompt-style">复制</button>
+          </div>
+          <pre id="prompt-style">请把当前页面的视觉风格调整为：{风格描述}。
+要求保留现有内容结构，只优化布局、颜色、字号和响应式表现。
+请尽量让页面看起来更清晰、更有层次。</pre>
+        </article>
+
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>修 bug</h3>
+            <button class="ghost-btn" data-copy="#prompt-bug">复制</button>
+          </div>
+          <pre id="prompt-bug">我遇到一个问题：
+现象：{现象}
+报错：{报错}
+复现步骤：{步骤}
+请先帮我分析可能原因，再给出最小修改。</pre>
+        </article>
+
+        <article class="prompt-card">
+          <div class="prompt-head">
+            <h3>解释代码</h3>
+            <button class="ghost-btn" data-copy="#prompt-explain">复制</button>
+          </div>
+          <pre id="prompt-explain">请用适合 0 基础的方式解释这段代码：
+1. 每个文件是做什么的
+2. 关键变量和函数是什么意思
+3. 我应该先看哪几处
+4. 如果我要改它，最安全的入口在哪里</pre>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-heading">
+        <p class="eyebrow">联系我</p>
+        <h2>如果你想找到我，先发邮件就可以</h2>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:3510590836@qq.com">
+          <span>邮箱</span>
+          <strong>3510590836@qq.com</strong>
+        </a>
+        <article class="contact-card contact-card--hint" aria-label="外部链接后续补充">
+          <span>外链</span>
+          <strong>后续补充链接</strong>
+        </article>
+        <a class="contact-card" href="./codex-prompts.html">
+          <span>工具</span>
+          <strong>打开提问模板工具</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Codex 实验室 · <span id="year"></span></p>
+    <p>把想法拆小，进步就会变得看得见。</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
