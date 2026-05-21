@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小锋｜Codex 提问模板工具</title>
+  <meta
+    name="description"
+    content="一个给 0 基础学习者使用的 Codex 提问模板工具，帮助你更清楚地提需求、改样式、修 bug 和解释代码。"
+  />
+  <script src="./theme.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./tool.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html#home">
+      <span class="brand-mark">C</span>
+      <span>
+        <strong>小锋</strong>
+        <small>Codex 提问模板工具</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="./index.html">主页</a>
+      <a href="#templates">模板</a>
+      <a href="#howto">怎么用</a>
+      <a href="mailto:3510590836@qq.com">邮箱</a>
+      <button class="theme-toggle" type="button" data-theme-toggle>深色模式</button>
+    </nav>
+  </header>
+
+  <main class="shell tool-shell">
+    <div class="tool-layout">
+      <aside class="section side-nav" aria-label="页面导航">
+        <p class="eyebrow">快速到达</p>
+        <nav class="side-nav__links" data-page-nav>
+          <a href="#intro">工具介绍</a>
+          <a href="#templates">模板区域</a>
+          <a href="#howto">使用建议</a>
+        </nav>
+      </aside>
+
+      <div class="tool-content">
+        <section id="intro" class="section tool-hero">
+          <div class="tool-hero__copy">
+            <p class="eyebrow">第一个小工具</p>
+            <h1>不会提问时，就先从模板开始。</h1>
+            <p class="hero-text">
+              这个工具帮你处理 4 个最常见的 Codex 场景：加功能、改样式、修 bug、解释代码。
+              你可以直接复制原始模板，也可以先填写自己的情况，再复制更完整的提问内容。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button--primary" href="#templates">开始使用</a>
+              <a class="button button--ghost" href="./index.html#projects">返回主页</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-label">这个工具适合你在什么时候用</p>
+            <ul class="checklist">
+              <li>知道自己想改什么，但不知道怎么开口</li>
+              <li>已经有报错了，但不确定怎么描述问题</li>
+              <li>想让 Codex 用新手能懂的话解释代码</li>
+            </ul>
+
+            <div class="panel-note">
+              <span>会自动记住</span>
+              <p>你在这里填写过的内容会保存在当前浏览器里，刷新后还在，方便你反复练习。</p>
+            </div>
+          </aside>
+        </section>
+
+        <section id="templates" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">4 类核心模板</p>
+            <h2>先选场景，再复制更清楚的话</h2>
+          </div>
+
+          <div class="template-grid">
+            <article class="template-card" data-template-card="feature">
+          <div class="template-card__top">
+            <div>
+              <p class="template-tag">场景 01</p>
+              <h3>加功能</h3>
+            </div>
+            <button class="ghost-btn" data-copy-template="feature">复制原始模板</button>
+          </div>
+          <p class="template-text">适合“我想让项目多一个功能，但不知道怎么把需求说清楚”的情况。</p>
+          <div class="field-grid">
+            <label class="field">
+              <span>功能名</span>
+              <input type="text" data-field="featureName" placeholder="例如：任务筛选、深色模式" />
+            </label>
+            <label class="field">
+              <span>目标</span>
+              <textarea rows="3" data-field="goal" placeholder="例如：我想让用户只看未完成任务"></textarea>
+            </label>
+          </div>
+          <div class="template-actions">
+            <button class="button button--primary button--small" data-copy-generated="feature">复制生成结果</button>
+            <button class="button button--ghost button--small" data-reset-template="feature">清空</button>
+          </div>
+          <div class="output-block">
+            <div class="output-head">
+              <span>生成结果</span>
+              <small>会随着输入自动更新</small>
+            </div>
+            <textarea id="output-feature" class="output-box" rows="8" readonly></textarea>
+          </div>
+        </article>
+
+            <article class="template-card" data-template-card="style">
+          <div class="template-card__top">
+            <div>
+              <p class="template-tag">场景 02</p>
+              <h3>改样式</h3>
+            </div>
+            <button class="ghost-btn" data-copy-template="style">复制原始模板</button>
+          </div>
+          <p class="template-text">适合“结构先别动，我只想让页面看起来更顺眼、更像某种风格”的情况。</p>
+          <div class="field-grid">
+            <label class="field">
+              <span>风格描述</span>
+              <textarea rows="4" data-field="styleGoal" placeholder="例如：更清爽的绿色、卡片更轻、层次更清楚"></textarea>
+            </label>
+          </div>
+          <div class="template-actions">
+            <button class="button button--primary button--small" data-copy-generated="style">复制生成结果</button>
+            <button class="button button--ghost button--small" data-reset-template="style">清空</button>
+          </div>
+          <div class="output-block">
+            <div class="output-head">
+              <span>生成结果</span>
+              <small>会随着输入自动更新</small>
+            </div>
+            <textarea id="output-style" class="output-box" rows="8" readonly></textarea>
+          </div>
+        </article>
+
+            <article class="template-card" data-template-card="bug">
+          <div class="template-card__top">
+            <div>
+              <p class="template-tag">场景 03</p>
+              <h3>修 bug</h3>
+            </div>
+            <button class="ghost-btn" data-copy-template="bug">复制原始模板</button>
+          </div>
+          <p class="template-text">适合“按钮点不动、页面报错、样式坏了、结果不对”这类需要排查问题的情况。</p>
+          <div class="field-grid">
+            <label class="field">
+              <span>现象</span>
+              <textarea rows="3" data-field="symptom" placeholder="例如：按钮点击没反应，页面没有跳转"></textarea>
+            </label>
+            <label class="field">
+              <span>报错</span>
+              <textarea rows="3" data-field="error" placeholder="例如：控制台显示某个函数未定义；如果没有报错也可以写“暂时没有看到报错”"></textarea>
+            </label>
+            <label class="field">
+              <span>复现步骤</span>
+              <textarea rows="3" data-field="steps" placeholder="例如：打开首页 -> 点击按钮 -> 没有任何变化"></textarea>
+            </label>
+          </div>
+          <div class="template-actions">
+            <button class="button button--primary button--small" data-copy-generated="bug">复制生成结果</button>
+            <button class="button button--ghost button--small" data-reset-template="bug">清空</button>
+          </div>
+          <div class="output-block">
+            <div class="output-head">
+              <span>生成结果</span>
+              <small>会随着输入自动更新</small>
+            </div>
+            <textarea id="output-bug" class="output-box" rows="10" readonly></textarea>
+          </div>
+        </article>
+
+            <article class="template-card" data-template-card="explain">
+          <div class="template-card__top">
+            <div>
+              <p class="template-tag">场景 04</p>
+              <h3>解释代码</h3>
+            </div>
+            <button class="ghost-btn" data-copy-template="explain">复制原始模板</button>
+          </div>
+          <p class="template-text">适合“我看不懂这段代码、这个文件是做什么的、我应该从哪里改”这种学习型问题。</p>
+          <div class="field-grid">
+            <label class="field">
+              <span>想解释的对象</span>
+              <textarea rows="4" data-field="target" placeholder="例如：script.js 里的导航高亮逻辑；或者贴一段你看不懂的代码"></textarea>
+            </label>
+          </div>
+          <div class="template-actions">
+            <button class="button button--primary button--small" data-copy-generated="explain">复制生成结果</button>
+            <button class="button button--ghost button--small" data-reset-template="explain">清空</button>
+          </div>
+          <div class="output-block">
+            <div class="output-head">
+              <span>生成结果</span>
+              <small>会随着输入自动更新</small>
+            </div>
+            <textarea id="output-explain" class="output-box" rows="9" readonly></textarea>
+          </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="howto" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">怎么用</p>
+            <h2>保持简单，但说清重点</h2>
+          </div>
+
+          <div class="mini-tip-grid">
+            <article class="mini-tip">
+              <span class="card-kicker">01</span>
+              <h3>先选最接近的场景</h3>
+              <p>不要一开始就追求完美模板，先挑一个最接近的问题类型，先把第一句话发出去。</p>
+            </article>
+            <article class="mini-tip">
+              <span class="card-kicker">02</span>
+              <h3>把现象写得像事实</h3>
+              <p>少说“它坏了”，多说“我点了什么、看到了什么、哪里和预期不一样”。</p>
+            </article>
+            <article class="mini-tip">
+              <span class="card-kicker">03</span>
+              <h3>让 Codex 用新手语言解释</h3>
+              <p>改完以后记得追加一句：“请用适合 0 基础的方式解释你改了什么。”</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Codex 提问模板工具 · <span id="year"></span></p>
+    <p>先把问题问清楚，后面的实现会轻松很多。</p>
+  </footer>
+
+  <script src="./codex-prompts.js"></script>
+</body>
+</html>
